@@ -160,15 +160,15 @@ ICON_LABEL_MAP: Dict[str, str] = {
 def _find_chinese_font(size: int) -> ImageFont.FreeTypeFont:
     """查找系统中可用的中文字体，找不到则回退到默认字体。"""
     candidates = [
-        "C:/Windows/Fonts/msyh.ttc",    # 微软雅黑
-        "C:/Windows/Fonts/simhei.ttf",  # 黑体
-        "C:/Windows/Fonts/simsun.ttc",  # 宋体
-        "C:/Windows/Fonts/msyhbd.ttc",  # 微软雅黑粗体
+        "C:/Windows/Fonts/msyh.ttc",
+        "C:/Windows/Fonts/simhei.ttf",
+        "/System/Library/Fonts/PingFang.ttc",
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+        "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
     ]
     for path in candidates:
         if os.path.exists(path):
             return ImageFont.truetype(path, size)
-    # 回退：PIL 默认字体（不支持中文，但至少不会崩）
     return ImageFont.load_default()
 
 
