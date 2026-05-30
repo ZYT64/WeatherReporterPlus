@@ -19,9 +19,8 @@ pip install pillow matplotlib numpy requests
 
 ## 快速开始
 
-1. 复制 `config.example.json` 为 `config.json`
-2. 填写 `city`（城市名）和智谱 `api_key`
-3. 运行：
+1. 填写 `city`（城市名）和智谱 `api_key`
+2. 运行：
 
 ```bash
 python main.py
@@ -74,7 +73,7 @@ python warning_panel.py         # 预警面板
 ├── warning_panel.py     # 预警面板
 ├── chart.py             # 温度/降水图表
 ├── icons/               # 天气图标集
-└── config.example.json  # 配置模板
+└── config.json          # 配置文件
 ```
 
 ## 数据源
