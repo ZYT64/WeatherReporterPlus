@@ -1,0 +1,20 @@
+{
+  "city": "北京",
+
+  "image_gen": {
+    "api_key": "API_Key",
+    "api_base": "https://open.bigmodel.cn/api/paas/v4",
+    "model": "cogview-3-flash",
+    "size": "1152x864",
+    "quality": "standard",
+    "style": "漫画风格"
+  },
+
+  "ui": {
+    "blur_radius": 18,
+    "corner_radius": 50,
+    "border_width": 2,
+    "border_color": "white",
+    "supersample": 2
+  }
+}
